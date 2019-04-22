@@ -1,7 +1,7 @@
 import numpy as np
 from numpy.linalg import inv
 from interval import interval
-class n_interval():
+class ndinterval():
     def __init__(self,a,b):
         if len(a) != len(b):
             print("not valid n-dim interval")
