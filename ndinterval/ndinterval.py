@@ -1,7 +1,6 @@
 import numpy as np
 from numpy.linalg import inv
 from interval import interval
-from utils import int2binarray
 class n_interval():
     def __init__(self,a,b):
         if len(a) != len(b):
