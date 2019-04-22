@@ -1,9 +1,8 @@
 import numpy as np
 from numpy.linalg import inv
 from interval import interval
-
-
-class ndinterval():
+from utils import int2binarray
+class n_interval():
     def __init__(self,a,b):
         if len(a) != len(b):
             print("not valid n-dim interval")
@@ -25,7 +24,7 @@ class ndinterval():
         self.region = [interval([self.a[ii],self.b[ii]]) for ii in range(self.n)]
         self.r  = np.array([x[0][1] - x[0][0] for x in self.region])
         self.R = inv(np.diag(self.r))
-        self.corners_matrix = np.ones([self.two_to_n,1]) @ np.expand_dims(self.a,axis=0) + self.mask.T * (np.ones([self.two_to_n,1]) @ np.expand_dims(self.r,axis=0))
+        self.corners_matrix = np.matmul(np.ones([self.two_to_n,1]) , np.expand_dims(self.a,axis=0)) + self.mask.T * np.matmul(np.ones([self.two_to_n,1]) , np.expand_dims(self.r,axis=0))
         self.corners_set = [self.corners_matrix[ii,::] for ii in range(self.two_to_n)]
     def size_normalized(self):
         return self.size() / self.two_to_n
