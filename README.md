@@ -18,7 +18,7 @@ In the following paragraphs, I am going to describe how you can get and use Ndar
 
 To download ndinterval, either fork this github repo or simply use Pypi via pip.
 ```sh
-$ pip install ndinterval
+$ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org ndinterval
 ```
 
 ### Using it
