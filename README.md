@@ -3,7 +3,7 @@
 With ND-Interval, you can ....
 
 # Overview
-The NDArray Python package was written with fast use in mind. It provides the following key features
+The ND-Interval Python package was written with fast use in mind. It provides the following key features
 
   - construct nd-intervals .
   - do operations on nd-intervals like AND and OR to construct complex intervals
@@ -18,7 +18,7 @@ In the following paragraphs, I am going to describe how you can get and use Ndar
 
 To download ndinterval, either fork this github repo or simply use Pypi via pip.
 ```sh
-$ pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org ndinterval
+$ pip install ndinterval
 ```
 
 ### Using it
