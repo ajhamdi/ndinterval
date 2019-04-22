@@ -60,7 +60,7 @@ License
 MIT License
 
 Copyright (c) 2019 Abdullah Hamdi
->>>>>>> 3f2571e0bb5afedd213991411e0cf6786e4aa295
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
