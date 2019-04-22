@@ -1,4 +1,5 @@
 import numpy as np
+from numpy.linalg import inv
 from interval import interval
 
 

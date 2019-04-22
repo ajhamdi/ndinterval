@@ -59,7 +59,11 @@ License
 
 MIT License
 
+<<<<<<< HEAD
 Copyright (c) 2018 Joel Barmettler
+=======
+Copyright (c) 2019 Abdullah Hamdi
+>>>>>>> 267bb8c761ed0bf7318eeac02283456605925fc2
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
