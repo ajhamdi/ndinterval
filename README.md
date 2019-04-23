@@ -52,6 +52,7 @@ will output :
 >interval 1 :  [interval([0.0, 3.0]), interval([2.0, 8.0])] size: 18.0
 
 >interval 2 :  [interval([2.0, 30.0]), interval([20.0, 50.0])] size: 840.0
+
 where each ndinterval is a list of intervals of [pyinterval](https://github.com/taschini/pyinterval) class. The next operations are done on the ndinterval jointly .
 ### 2.Union of n dimensional intervals 
 
