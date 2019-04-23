@@ -36,7 +36,8 @@ And you are ready to go! At this point,
 Here is a list of examples of operations that you can do with nd-intervals 
 
 ### 1.Construct ND-intervals 
-Method: `ndinterval(a,b)` \\
+Method: `ndinterval(a,b)`
+
 Args: 
 - `a`: iteratable-like left most corner point of the high dimensional interval   
 - `b`:iteratable-like right most corner point of the high dimensional interval
