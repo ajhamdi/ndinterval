@@ -1,8 +1,3 @@
-import numpy as np
-import os
-import sys
-from numpy.linalg import inv
-from interval import interval
-from ndinterval.utils import *
-from ndinterval.ndinterval import ndinterval
-
+from .utils import int2binarray
+from .ndinterval import ndinterval
+__version__ = '0.8'
