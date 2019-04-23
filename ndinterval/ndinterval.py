@@ -1,10 +1,10 @@
 import numpy as np
 import logging
+import sys
+global sys
 from numpy.linalg import inv
 from interval import interval
 import ndinterval as nd
-
-
 class ndinterval():
     def __init__(self, a, b):
         if len(a) != len(b):
