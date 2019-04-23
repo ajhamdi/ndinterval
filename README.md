@@ -50,6 +50,7 @@ print('interval 2 : ',interval_2, "size:", interval_2.size() )
 ```
 will output :
 >interval 1 :  [interval([0.0, 3.0]), interval([2.0, 8.0])] size: 18.0
+
 >interval 2 :  [interval([2.0, 30.0]), interval([20.0, 50.0])] size: 840.0
 ### 2.Union of n dimensional intervals 
 
