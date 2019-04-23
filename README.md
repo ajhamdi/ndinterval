@@ -1,6 +1,6 @@
 # ND-Interval: Doing arithmetic on high dimensional intervals 
 
-With ND-Interval, you can construct high dimensnional intervals as data structures and do aritmetic operations directly on these intervals   
+With ND-Interval, you can construct high dimensnional intervals as data structures and do aritmetic operations directly on these intervals. ndinterval extends [pyinterval](https://github.com/taschini/pyinterval) class to multidimensional intervals . Which allow creating more complex intervals. 
 
 # Overview
 The ND-Interval Python package was written with fast use in mind. It provides the following key features
