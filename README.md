@@ -44,8 +44,8 @@ Args:
 
 ```Python
 interval_1 = ndinterval([0,2],[3,8]) ;  interval_2 = ndinterval([2,20],[30,50])
-print('interval 1 : ',interval_1, "size:", interval_1.size() )
-print('interval 2 : ',interval_2, "size:", interval_2.size() )
+print("interval 1 : ",interval_1, "size:", interval_1.size() )
+print("interval 2 : ",interval_2, "size:", interval_2.size() )
 
 ```
 will output :
@@ -56,7 +56,7 @@ will output :
 
 ```Python
 interval_union = interval_1 | interval_2
-print('union of interval 1 and 2 : ',interval_union )
+print("union of interval 1 and 2 : ",interval_union )
 ```
 will output :
 >union of interval 1 and 2 :  [interval([0.0, 30.0]), interval([2.0, 8.0], [20.0, 50.0])]
@@ -64,7 +64,7 @@ will output :
 ### 3.Intersection of n dimensional intervals 
 ```Python
 interval_intersection = interval_1 & interval_2
-print('intersection of interval 1 and 2 : ',interval_intersection )
+print("intersection of interval 1 and 2 : ",interval_intersection )
 ```
 will output :
 >intersection of interval 1 and 2 :  [interval([2.0, 3.0]), interval()]
