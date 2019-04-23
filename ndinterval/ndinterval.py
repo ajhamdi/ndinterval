@@ -1,7 +1,5 @@
 import numpy as np
-import os
 import logging
-import sys
 from numpy.linalg import inv
 from interval import interval
 import ndinterval as nd
@@ -10,9 +8,7 @@ import ndinterval as nd
 class ndinterval():
     def __init__(self, a, b):
         if len(a) != len(b):
-            print("not valid n-dim interval")
-        elif "interval" not in sys.modules:
-            print("pip install pyinterval module first !!")
+            logging.error("not valid n-dim interval")
         else:
             self.n = len(a)
             self.two_to_n = 2**self.n
