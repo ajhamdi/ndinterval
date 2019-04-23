@@ -1,18 +1,19 @@
-# ND-Interval Doing arithmetic on n dimensional intervals 
+# ND-Interval: Doing arithmetic on high dimensional intervals 
 
-With ND-Interval, you can ....
+With ND-Interval, you can construct high dimensnional intervals as data structures and do aritmetic operations directly on these intervals   
 
 # Overview
 The ND-Interval Python package was written with fast use in mind. It provides the following key features
 
-  - construct nd-intervals .
-  - do operations on nd-intervals like AND and OR to construct complex intervals
+  - construct n dimensional intervals .
+  - do operations on n dimensional intervals like AND and OR to construct complex intervals
+  - measure sizres of high dimensional intervals  
   - batch operations on nd-intervals for scaling operations on intervals 
 
 
 ## Usage
 
-In the following paragraphs, I am going to describe how you can get and use Ndarray for your own projects.
+In the following paragraphs, I am going to describe how you can get and use ndinterval for your own projects.
 
 ###  Getting it
 
@@ -35,23 +36,36 @@ And you are ready to go! At this point,
 Here is a list of examples of operations that you can do with nd-intervals 
 
 ### 1.Construct ND-intervals 
-
-
-```Python
-print("HI")
-```
-
-### 2.Union of nd intervals 
+Method: `ndinterval(a,b)`
+Args: 
+- `a`: iteratable-like left most corner point of the high dimensional interval   
+- `b`:iteratable-like right most corner point of the high dimensional interval
 
 ```Python
-print("HI")
-```
+interval_1 = ndinterval([0,2],[3,8]) ;  interval_2 = ndinterval([2,20],[30,50])
+print('interval 1 : ',interval_1, "size:", interval_1.size() )
+print('interval 2 : ',interval_2, "size:", interval_2.size() )
 
-### 3.Union of nd intervals 
+```
+will output :
+>interval 1 :  [interval([0.0, 3.0]), interval([2.0, 8.0])] size: 18.0
+>interval 2 :  [interval([2.0, 30.0]), interval([20.0, 50.0])] size: 840.0
+### 2.Union of n dimensional intervals 
 
 ```Python
-print("HI")
+interval_union = interval_1 | interval_2
+print('union of interval 1 and 2 : ',interval_union )
 ```
+will output :
+>union of interval 1 and 2 :  [interval([0.0, 30.0]), interval([2.0, 8.0], [20.0, 50.0])]
+
+### 3.Intersection of n dimensional intervals 
+```Python
+interval_intersection = interval_1 & interval_2
+print('intersection of interval 1 and 2 : ',interval_intersection )
+```
+will output :
+>intersection of interval 1 and 2 :  [interval([2.0, 3.0]), interval()]
 
 
 License
