@@ -39,8 +39,8 @@ Here is a list of examples of operations that you can do with nd-intervals
 Method: `ndinterval(a,b)`
 
 Args: 
-- `a`: iteratable-like left most corner point of the high dimensional interval   
-- `b`:iteratable-like right most corner point of the high dimensional interval
+- `a`: iteratable-like left corner point of the high dimensional interval   
+- `b`:iteratable-like right corner point of the high dimensional interval
 
 ```Python
 interval_1 = ndinterval([0,2],[3,8]) ;  interval_2 = ndinterval([2,20],[30,50])
